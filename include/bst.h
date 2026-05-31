@@ -77,6 +77,7 @@ class BST {
     }
 
  public:
+    using NodeType = Node;
     BST() : root(nullptr) {}
     ~BST() {
         destroyTree(root);
@@ -97,7 +98,6 @@ class BST {
                       int& pos) const {
         gatherNodes(root, arr, pos);
     }
-    using NodeType = Node;
 };
 
 #endif  // INCLUDE_BST_H_
