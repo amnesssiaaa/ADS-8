@@ -1,5 +1,4 @@
 // Copyright 2021 NNTU-CS
-#include "alg.h"
 #include <algorithm>
 #include <cstdlib>
 #include <fstream>
