@@ -5,6 +5,7 @@
 #include <iostream>
 #include <locale>
 #include "bst.h"
+
 void makeTree(BST<std::string>& tree, const char* filename) {
     std::ifstream file(filename);
     if (!file) {
@@ -12,8 +13,8 @@ void makeTree(BST<std::string>& tree, const char* filename) {
         return;
     }
     std::string word;
-    while (!file.eof()) {
-        int ch = file.get();
+    int ch;
+    while ((ch = file.get()) != EOF) {
         if ((ch >= 'A' && ch <= 'Z') ||
             (ch >= 'a' && ch <= 'z')) {
             if (ch >= 'A' && ch <= 'Z') {
