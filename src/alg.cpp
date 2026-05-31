@@ -1,9 +1,11 @@
 // Copyright 2021 NNTU-CS
 #include "alg.h"
+#include <algorithm>
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
 #include <locale>
+#include <string>
 #include "bst.h"
 
 void makeTree(BST<std::string>& tree, const char* filename) {
